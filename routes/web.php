@@ -8,6 +8,7 @@ use App\Http\Livewire\Auth\Passwords\Email;
 use App\Http\Livewire\Auth\Passwords\Reset;
 use App\Http\Livewire\Auth\Register;
 use App\Http\Livewire\Auth\Verify;
+use App\Http\Livewire\Dashboard\Dashboard;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,9 +22,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome')->name('home');
 
 Route::middleware('guest')->group(function () {
+    Route::view('/', 'welcome')->name('home');
+
     Route::get('login', Login::class)
         ->name('login');
 
@@ -53,4 +55,10 @@ Route::middleware('auth')->group(function () {
 
     Route::post('logout', LogoutController::class)
         ->name('logout');
+
+    Route::get('/dashboard', Dashboard::class)
+        ->name('dashboard');
+
+    Route::get('/user-profile', Dashboard::class)
+        ->name('dashboard');
 });
