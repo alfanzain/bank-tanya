@@ -10,6 +10,7 @@ Learning TALL stack
 - composer require livewire/livewire laravel-frontend-presets/tall
 - php artisan ui tall
 - npm install
+
 ### Development
 
 - https://github.com/laravel-frontend-presets/tall/issues/135#issuecomment-1719402789
@@ -25,3 +26,8 @@ This will Hot Module Replacement. You don't need to access http://localhost:5173
 - php artisan make:model QuestionCategory -mc
 - php artisan make:model QuestionTag -mc
 
+## Day 2 (23/09/2023)
+
+### Development
+
+- 

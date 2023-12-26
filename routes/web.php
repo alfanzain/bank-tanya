@@ -59,6 +59,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)
         ->name('dashboard');
 
-    Route::get('/user-profile', Dashboard::class)
-        ->name('dashboard');
+    // Route::get('/user-profile', Dashboard::class)
+    //     ->name('dashboard');
 });
