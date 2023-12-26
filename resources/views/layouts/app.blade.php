@@ -1,4 +1,4 @@
-<x-layouts.base>
+<x-layouts.base :title="$title">
     @auth
         @if (Request::is('static-sign-up'))
             <div class="flex flex-wrap -mx-3">

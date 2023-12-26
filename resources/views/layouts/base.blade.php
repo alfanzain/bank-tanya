@@ -12,11 +12,13 @@
 
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets') }}/img/apple-icon.png" />
     <link rel="icon" type="image/png" href="{{ asset('assets') }}/img/favicon.png" />
-    @hasSection('title')
-        <title>@yield('title') - {{ config('app.name') }}</title>
+
+    @isset($title)
+    <title>{{ $title }} | {{ config('app.name') }}</title>
     @else
-        <title>{{ config('app.name') }}</title>
-    @endif
+    <title>{{ config('app.name') }}</title>
+    @endisset
+
     <!-- Fonts and icons -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <!-- Nucleo Icons -->

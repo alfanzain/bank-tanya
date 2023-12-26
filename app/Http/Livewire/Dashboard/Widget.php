@@ -12,7 +12,6 @@ class Widget extends Component
     public $percentageChanges;
     public $icon;
 
-    #[Title('Create Post')]
     public function render()
     {
         return view('livewire.dashboard.widget');

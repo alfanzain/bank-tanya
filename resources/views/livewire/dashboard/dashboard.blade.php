@@ -1,5 +1,3 @@
-@section('title', 'Dashboard')
-
 <div>
     <!-- row 1 -->
     <div class="flex flex-wrap -mx-3">
