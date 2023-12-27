@@ -1,3 +1,10 @@
+# Stacks
+
+- Laravel v10.38.2
+- Laravel Livewire v3.3.3
+- Alpine JS v3.13.0
+- Tailwind CSS v3.3.3
+
 # Learning Progress
 
 Learning TALL stack
@@ -26,8 +33,14 @@ This will Hot Module Replacement. You don't need to access http://localhost:5173
 - php artisan make:model QuestionCategory -mc
 - php artisan make:model QuestionTag -mc
 
-## Day 2 (23/09/2023)
+## Day 2 (26/12/2023)
 
 ### Development
 
-- 
+- Learn Livewire Title attribute
+
+## Day 3 (27/12/2023)
+
+### Development
+
+- Convert unnecessary livewires into blade components
