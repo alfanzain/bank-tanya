@@ -59,6 +59,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)
         ->name('dashboard');
 
-    // Route::get('/user-profile', Dashboard::class)
-    //     ->name('dashboard');
+    Route::get('/questions', \App\Http\Livewire\Dashboard\Question::class)
+        ->name('questions');
+    Route::get('/questions/create', \App\Http\Livewire\Dashboard\CreateQuestion::class)
+        ->name('questions.create');
 });

@@ -15,7 +15,7 @@ Learning TALL stack
 
 - composer create-project laravel/laravel bank-tanya
 - composer require livewire/livewire laravel-frontend-presets/tall
-- php artisan ui tall
+- php artisan ui tall --auth
 - npm install
 
 ### Development
@@ -38,9 +38,15 @@ This will Hot Module Replacement. You don't need to access http://localhost:5173
 ### Development
 
 - Learn Livewire Title attribute
+- Convert unnecessary livewires into blade components
 
-## Day 3 (27/12/2023)
+## Day 3 (01/01/2024)
 
 ### Development
 
-- Convert unnecessary livewires into blade components
+- I have no idea what I built so I decided to make a simple QnA platform consisting of all Livewire docs
+- I learned: 
+  - Using wire:keys on loops
+  - wire:model synced with property, but doesn't update lively
+  - wire:model.live synced with property, and live updates
+- Question page: Question title reference -> Stackoverflow

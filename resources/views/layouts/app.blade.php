@@ -29,11 +29,6 @@
                         @include('layouts.footers.auth.footer')
                     </div>
                 </main>
-            @elseif (Request::is('virtual-reality'))
-                @include('layouts.navbars.auth.nav')
-                @include('layouts.navbars.auth.sidebar')
-                {{ $slot }}
-                @include('layouts.footers.auth.footer')
             @else
                 @include('layouts.navbars.auth.sidebar')
                 <main
