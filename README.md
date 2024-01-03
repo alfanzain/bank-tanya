@@ -1,3 +1,7 @@
+# Journal
+
+https://alfanzain.notion.site/alfanzain/Learn-Livewire-Docs-all-of-it-by-Building-Simple-QnA-Platform-bddb793614cb41229f6fcb95b80f7ab8
+
 # Stacks
 
 - Laravel v10.38.2
