@@ -14,17 +14,8 @@ class CreateQuestion extends Component
     public string $category;
     public string $tags;
 
-    protected $rules = [
-        'title' => 'max:100|min:5',
-        'description' => 'max:200',
-        'category' => 'max:100',
-        'tags' => 'nullable',
-    ];
-
     public function save()
     {
-        $this->validate();
-
         dd($this->title, $this->description, $this->category, $this->tags);
 
         // Question::create();
