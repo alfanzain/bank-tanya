@@ -38,7 +38,7 @@
                                     <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">Title</h6>
 
                                     <div class="mb-4">
-                                        <input wire:model.lazy="title" type="text"
+                                        <input wire:model="title" type="text"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                             placeholder="Title" id="title" required />
                                         @error('title') <p class="text-size-sm text-red-500">{{ $message }}</p>
@@ -48,7 +48,7 @@
                                     <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">Description</h6>
 
                                     <div class="mb-4">
-                                        <textarea wire:model.lazy="description" rows="4"
+                                        <textarea wire:model="description" rows="4"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                             placeholder="What do you want to ask?" id="description">  </textarea>
                                         @error('description') <p class="text-size-sm text-red-500">{{ $message }}</p> @enderror
@@ -64,7 +64,7 @@
                                     </h6>
 
                                     <div class="mb-4">
-                                        <input wire:model.lazy="category" type="category"
+                                        <input wire:model="category" type="category"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                             placeholder="Category" id="category" required />
                                         @error('category') <p class="text-size-sm text-red-500">{{ $message }}</p>
@@ -76,7 +76,7 @@
                                     </h6>
 
                                     <div class="mb-4">
-                                        <input wire:model.lazy="tags" type="text"
+                                        <input wire:model="tags" type="text"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
                                             placeholder="Tags" id="tags" required />
                                         @error('tags') <p class="text-size-sm text-red-500">{{ $message }}</p>
