@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('description');
+            $table->string('category');
+            $table->string('tags');
+            $table->enum('status', ['UNANSWERED', 'ANSWERED']);
+            $table->integer('author_id')->unsigned()->default(12);
             $table->timestamps();
         });
     }

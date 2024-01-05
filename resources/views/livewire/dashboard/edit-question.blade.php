@@ -3,7 +3,7 @@
         <div class="w-full px-3 mb-6 e">
             <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
                 <div class="flex-auto p-4">
-                    <h5 class="font-bold py-3">Create Question</h5>
+                    <h5 class="font-bold py-3">Edit Question</h5>
 
                     <form wire:submit="save">
                         <div class="flex flex-wrap -mx-3">
@@ -59,7 +59,7 @@
                                     <div class="flow-root">
                                         <button type="submit"
                                             class="float-right inline-block px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray hover:border-slate-700 hover:bg-slate-700 hover:text-white">
-                                            Create Question</button>
+                                            Save Question</button>
                                     </div>
                                 </div>
                             </div>

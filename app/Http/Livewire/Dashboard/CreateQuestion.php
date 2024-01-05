@@ -2,27 +2,24 @@
 
 namespace App\Http\Livewire\Dashboard;
 
-use App\Models\Question;
+use App\Livewire\Forms\QuestionForm;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class CreateQuestion extends Component
 {
-    #[Title('Create Question')]
-    public string $title;
-    public string $description;
-    public string $category;
-    public string $tags;
+    public QuestionForm $form;
 
     public function save()
     {
-        dd($this->title, $this->description, $this->category, $this->tags);
+        $this->form->store();
 
-        // Question::create();
-
-        return back()->with('status', "Your question have been successfully created!");
+        return redirect()
+            ->to('/questions')
+            ->with('status', 'Your question have been successfully created!');
     }
 
+    #[Title('Create Question')]
     public function render()
     {
         return view('livewire.dashboard.create-question');

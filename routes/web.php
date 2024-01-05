@@ -59,8 +59,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)
         ->name('dashboard');
 
-    Route::get('/questions', \App\Http\Livewire\Dashboard\Question::class)
+    Route::get('/questions', \App\Http\Livewire\Dashboard\IndexQuestion::class)
         ->name('questions');
     Route::get('/questions/create', \App\Http\Livewire\Dashboard\CreateQuestion::class)
         ->name('questions.create');
+    Route::get('/questions/edit/{question}', \App\Http\Livewire\Dashboard\EditQuestion::class)
+        ->name('questions.edit');
 });
